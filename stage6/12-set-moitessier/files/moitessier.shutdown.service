@@ -1,0 +1,9 @@
+[Unit]
+Description=Moitessier Shutdown
+
+[Service]
+ExecStart=/home/pi/moitessier/scripts/system_shutdown
+Restart=always
+
+[Install]
+WantedBy=multi-user.target"
