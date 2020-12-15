@@ -23,31 +23,24 @@ Global {
   backgroundfile=/usr/share/lxpanel/images/background.png
   iconsize=36
   monitor=0
-  point_at_menu=1
-}
-Plugin {
-  type=space
-  Config {
-    Size=4
-  }
+  point_at_menu=0
 }
 Plugin {
   type=menu
   Config {
+    padding=4
     image=start-here
     system {
     }
     separator {
     }
     item {
-      name=Run...
       image=system-run
       command=run
     }
     separator {
     }
     item {
-      name=Shutdown...
       image=system-shutdown
       command=logout
     }
@@ -56,7 +49,7 @@ Plugin {
 Plugin {
   type=space
   Config {
-    Size=8
+    Size=4
   }
 }
 Plugin {
@@ -152,7 +145,7 @@ Plugin {
   }
 }
 Plugin {
-  type=volumealsabt
+  type=volumepulse
   Config {
   }
 }
@@ -186,6 +179,11 @@ Plugin {
 Plugin {
   type=space
   Config {
-    Size=4
+    Size=2
+  }
+}
+Plugin {
+  type=magnifier
+  Config {
   }
 }
